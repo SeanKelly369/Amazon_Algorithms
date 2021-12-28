@@ -32,7 +32,6 @@ class SumTwoLists {
         sum.append(tempSum).reverse();        
         String result = sum.toString();
         
-
         ListNode dummyHead = new ListNode(0);
         ListNode l3 = dummyHead;
         for (int i = 0; i < result.length(); ++i) {
@@ -44,7 +43,6 @@ class SumTwoLists {
         return dummyHead.next;
     }
 }
-
 
 class AddTwoNumberFromList {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -75,7 +73,6 @@ class AddTwoNumberFromList {
             ListNode newNode = new ListNode(carry);
             l3.next = newNode;
             l3 = l3.next;
-
         }
 
         return dummyHead.next;
