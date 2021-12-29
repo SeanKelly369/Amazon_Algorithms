@@ -6,7 +6,7 @@ class CountUniqueCharactersOfAllSubstringsOfGivenString {
 	int[] lastSeenCharIndexPositions = new int[26]; // cover all the letters of the alphabet
         Arrays.fill(lastSeenCharIndexPositions, -1); 
         
-        int[] preLastCharOccurrencePos = new int[26]; // Count the number of times a letter in the alphabet occurs
+        int[] preLastCharOccurrencePos = new int[26]; // Store the previous last index position where a character appeared, with a minus -1 value
         Arrays.fill(preLastCharOccurrencePos, -1);
 		
 	int count = 0; 
