@@ -30,7 +30,7 @@ class NumberOfIslands {
         dfs(grid, i, j + 1); // up
         dfs(grid, i, j - 1); // down
         
-        // An island has been founds, therefore increase the count
+        // An island has been found, therefore increase the count
         return 1;
     }
 }
